@@ -272,9 +272,9 @@ class RedBlackBst {
       return false;
     }
 
-//    if (hasInserted && node_type(*node) == BLACK_INTERNAL) {
-//      balance_node(node_balance_state(*node), node);
-//    }
+    if (hasInserted && node_type(*node) == BLACK_INTERNAL) {
+      balance_node(node_balance_state(*node), node);
+    }
     return hasInserted;
   }
   /**

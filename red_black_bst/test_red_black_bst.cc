@@ -170,7 +170,7 @@ TEST(InsertTests, LargeTableWithDups) {
 #ifdef TEST_PERFORMANCE
 TEST(EvaluatePerformance, CompareToPerfectTree) {
   RedBlackBst<size_t> test;
-  const size_t SIZE_OF_TEST = 1000;
+  const size_t SIZE_OF_TEST = 100000;
 
   std::cout << "size, "
             << "test, "
@@ -178,7 +178,7 @@ TEST(EvaluatePerformance, CompareToPerfectTree) {
             << "perc diff" << std::endl;
   for (size_t i = 0; i < SIZE_OF_TEST; ++i) {
     test.Insert(i);
-    if ((i % 100) == 0) {
+    if ((i % 10000) == 0) {
       const double testAvgDepth = test.CalculateAverageNodeDepth();
       const double perfectAvgDepth =
           CalculateAverageNodeDepthForPerfectTree(test.size());
