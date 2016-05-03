@@ -1,3 +1,6 @@
+# Doxygen files
+*.dSYM
+
 # Compiled Object files
 *.slo
 *.lo
