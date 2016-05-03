@@ -5,7 +5,7 @@ CXX = clang++
 
 # ----- Google Test Setup -----
 
-GTEST_DIR = /Users/JRut/apps/googletest/googletest
+GTEST_DIR = ../googletest
 GTEST_HEADERS = $(GTEST_DIR)/include/gtest/gtest*.h \
 		$(GTEST_DIR)/include/gtest/internal/*.h
 GTEST_SRCS_ = $(GTEST_DIR)/src/*.cc $(GTEST_DIR)/src/*.h $(GTEST_HEADERS)
