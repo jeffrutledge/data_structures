@@ -93,6 +93,13 @@ class RedBlackBst {
   inline size_t size() const {
     return size_;
   }
+  //----------------------------------------------------------------------------
+  // ITERATOR FUNCTIONS
+  //----------------------------------------------------------------------------
+  inline iterator& begin() const;
+  inline iterator& end() const;
+  inline const_iterator& cbegin() const;
+  inline const_iterator& cend() const;
 
  private:
   //----------------------------------------------------------------------------
